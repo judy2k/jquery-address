@@ -136,8 +136,7 @@
             },
             _html = function() {
                 var src = _js() + ':' + FALSE + ';document.open();document.writeln(\'<html><head><title>' + 
-                    _d.title.replace('\'', '\\\'') + '</title><script>var ' + ID + ' = "' + encodeURIComponent(_href()) + 
-                    (_d.domain != _l.host ? '";document.domain="' + _d.domain : '') + 
+                    _d.title.replace('\'', '\\\'') + '</title><script>var ' + ID + ' = "' + encodeURIComponent(_href()) +
                     '";</' + 'script></head></html>\');document.close();';
                 if (_version < 7) {
                     _frame.src = src;
