@@ -141,7 +141,7 @@
                 if (_version < 7) {
                     _frame.src = src;
                 } else {
-                    _frame.contentWindow.location.replace(src);
+                    _frame.contentWindow.location.href = src;
                 }
             },
             _options = function() {
